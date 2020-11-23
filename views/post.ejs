@@ -1,9 +1,4 @@
 <%-include("partials/header");-%>
 <h1><%=title.substring(0,1).toUpperCase()+title.substring(1)%></h1>
-<%posts.forEach(function(post){%>
-<%if(title==post.title){%>
-	<p><%=post.body%></p>
-<%}%>	
-<%});%>
-
+<p><%=body%></p>
 <%-include("partials/footer");-%>
